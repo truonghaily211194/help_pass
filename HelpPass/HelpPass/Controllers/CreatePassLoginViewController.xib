@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatePassLoginViewController" customModule="HelpPass" customModuleProvider="target">
+            <connections>
+                <outlet property="okButton" destination="LIQ-i9-xAo" id="15x-Yt-GFm"/>
+                <outlet property="passRepeatTextField" destination="nuX-yt-AQl" id="afB-Y1-d3F"/>
+                <outlet property="passTextField" destination="O82-IZ-QE1" id="xNH-BK-vNO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tW-Pv-baG">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O82-IZ-QE1">
+                            <rect key="frame" x="30" y="348.66666666666669" width="333" height="55"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Uhk-OY-AV2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nuX-yt-AQl">
+                            <rect key="frame" x="30" y="433.66666666666669" width="333" height="55"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Hu7-UM-qLk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIQ-i9-xAo">
+                            <rect key="frame" x="40" y="518.66666666666663" width="303" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="BHs-1T-cp1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="OK" backgroundImage="footer_btn_food">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="ok:" destination="-1" eventType="touchUpInside" id="vaM-hN-vc1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="LIQ-i9-xAo" firstAttribute="leading" secondItem="7tW-Pv-baG" secondAttribute="leading" constant="40" id="5H8-qS-jxJ"/>
+                        <constraint firstItem="nuX-yt-AQl" firstAttribute="leading" secondItem="7tW-Pv-baG" secondAttribute="leading" constant="30" id="6N7-kw-23E"/>
+                        <constraint firstAttribute="trailing" secondItem="O82-IZ-QE1" secondAttribute="trailing" constant="30" id="eUR-0X-5Bx"/>
+                        <constraint firstItem="nuX-yt-AQl" firstAttribute="top" secondItem="O82-IZ-QE1" secondAttribute="bottom" constant="30" id="fYz-fN-nVp"/>
+                        <constraint firstItem="LIQ-i9-xAo" firstAttribute="top" secondItem="nuX-yt-AQl" secondAttribute="bottom" constant="30" id="jBy-m1-i34"/>
+                        <constraint firstItem="O82-IZ-QE1" firstAttribute="centerX" secondItem="7tW-Pv-baG" secondAttribute="centerX" id="jLI-y0-hsz"/>
+                        <constraint firstAttribute="trailing" secondItem="LIQ-i9-xAo" secondAttribute="trailing" constant="50" id="mQG-eY-uEV"/>
+                        <constraint firstItem="O82-IZ-QE1" firstAttribute="leading" secondItem="7tW-Pv-baG" secondAttribute="leading" constant="30" id="pd4-hW-LaE"/>
+                        <constraint firstItem="O82-IZ-QE1" firstAttribute="centerY" secondItem="7tW-Pv-baG" secondAttribute="centerY" constant="-50" id="qUA-as-maf"/>
+                        <constraint firstAttribute="trailing" secondItem="nuX-yt-AQl" secondAttribute="trailing" constant="30" id="uhJ-D6-tSa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7tW-Pv-baG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ESd-vL-vDS"/>
+                <constraint firstItem="7tW-Pv-baG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Oz1-c2-x55"/>
+                <constraint firstAttribute="bottom" secondItem="7tW-Pv-baG" secondAttribute="bottom" id="Uj6-Ch-Xgk"/>
+                <constraint firstItem="7tW-Pv-baG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kXm-gP-MsG"/>
+            </constraints>
+            <point key="canvasLocation" x="46.564885496183201" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="footer_btn_food" width="155.66667175292969" height="37.666667938232422"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
